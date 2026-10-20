@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>公司一週午餐管理與點餐統整系統</title>
+    <title>公司一週午餐管理與點餐系統</title>
     <style>
         body { font-family: "Calibri", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: #f4f6f9; margin: 0; padding: 20px; color: #333; font-size: 14px; }
         .container { max-width: 1150px; margin: 0 auto; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
@@ -110,7 +110,7 @@
 <script>
     const BIN_ID = '662b2fe8acd3cb34a83543d2';
     const API_KEY = '$2a$10$npx70gt0zyLW4lcsNJAD2OZoO8hwxHkKEh8eFcrsauYvwbUb5bT2y';
-    const ADMIN_PW = '80724082'; // 您指定的管理者密碼
+    const ADMIN_PW = '80724082';
 
     const menuData = {
         "佳里排骨大王": { type: "葷食", items: { "雞腿飯": 115, "雞排飯": 100, "辣味香雞排飯": 100, "咔啦雞腿排飯": 75, "雞翅飯": 85, "無骨雞排飯": 75, "宮保雞丁飯": 80, "黑胡椒燒肉飯": 90, "排骨飯": 90, "魯排骨飯": 90, "日式豬排飯": 75, "筍干爌肉飯": 95, "鱈魚飯": 85, "蒲燒鯛魚飯": 75, "日式鹹魚飯": 75, "肉魚飯": 75, "白帶魚飯": 80, "鐵路魚排飯": 75, "蝦排飯": 80, "白飯": 10, "魯蛋": 15 } },
@@ -193,7 +193,6 @@
         }
     }
 
-    // 管理者密碼驗證
     function checkAdminPassword() {
         const panel = $("adminPanel");
         if (panel.style.display === "block") { 
